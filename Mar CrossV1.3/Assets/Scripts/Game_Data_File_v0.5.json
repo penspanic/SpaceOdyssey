@@ -1,0 +1,386 @@
+﻿{
+    "Survivable Planet Script": [
+        "물 존재.",
+        "ET 발견.",
+        "산소 발견.",
+        "식물 발견.",
+        "탄소 발견.",
+        "수증기 발견.",
+        "골디락스 지대.",
+        "우주고양이 발견.",
+        "암석행성으로 판명.",
+        "테라포밍 흔적 발견.",
+        "스트로마톨라이트 발견."
+    ],
+    "Nonviable Planet Script": [
+        "대기 존재.",
+        "구름 존재.",
+        "얼음 발견.",
+        "질소 발견.",
+        "가스 행성.",
+        "극저온 행성.",
+        "초고온 행성.",
+        "미네랄 발견.",
+        "큐브가 발견.",
+        "자기장 불안.",
+        "화산활동 활발.",
+        "프레데터 발견.",
+        "방사능이 존재.",
+        "중력장이 존재.",
+        "박테리아 존재.",
+        "대기가 불안정.",
+        "지각이 불안정.",
+        "아미노산 발견.",
+        "초고밀도 행성.",
+        "메탄 가스 발견.",
+        "우주 괴수 발견.",
+        "모노리스트 발견.",
+        "베스핀가스 발견.",
+        "다수의 위성 발견.",
+        "젤나가 유적 발견.",
+        "크립토나이트 발견.",
+        "거대바퀴벌레 발견.",
+        "거대 크레이터 발견.",
+        "버려진 우주선 발견.",
+        "초신성 폭발의 흔적 감지.",
+        "나선은하의 중심부로 판명.",
+        "12등급 사이오닉파가 감지."
+    ],
+    "English Survivable Planet Script": [
+        "Vapor found.",
+        "H2O found.",
+        "O2 atmosphere found.",
+        "Terrestrial planet.",
+        "In Goldilocks zone.",
+        "Plant life found.",
+        "Space Cat found.",
+        "Carbon found.",
+        "ET found.",
+        "Trace of Teraforming found.",
+        "Stromatolite found."
+    ],
+    "English Nonviable Planet Script": [
+        "Radioactivity exist.",
+        "Gravity field exist.",
+        "Bacteria found.",
+        "Methane gas found.",
+        "Atmosphere exist.",
+        "Gas cloud found.",
+        "Ice found.",
+        "Nitrogen found.",
+        "Gas planet.",
+        "Amino acid found.",
+        "Extremely low temperature planet.",
+        "Extremely High temperature planet.",
+        "Space monster found.",
+        "Multiple natural satellite found.",
+        "Trace of super nova effect.",
+        "In center of spiral galaxy.",
+        "Active volcanic planet.",
+        "Predetor found.",
+        "Class 12 psionic form detected.",
+        "Abandoned space ship found.",
+        "Xel'naga ruin found.",
+        "Extremely high density planet.",
+        "Monolith found.",
+        "Vespenn gas found.",
+        "Minerals found.",
+        "Kryptonite found.",
+        "Giant crater found.",
+        "Tesseract found.",
+        "Giant cockroach found.",
+        "Unstable Gravity field.",
+        "Unstable atmosphere.",
+        "Unstable land crust."
+    ],
+    "Sector Data": [
+        {
+            "First Sector Number": 1,
+            "Last Sector Number": 9,
+            "Success Rate": 50,
+            "Minimum Success Rate": 4,
+            "Hp Time": 2,
+            "Population": 5000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 10,
+            "Last Sector Number": 18,
+            "Success Rate": 50,
+            "Minimum Success Rate": 4,
+            "Hp Time": 1,
+            "Population": 6000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 19,
+            "Last Sector Number": 27,
+            "Success Rate": 50,
+            "Minimum Success Rate": 4,
+            "Hp Time": 0.8,
+            "Population": 8000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 28,
+            "Last Sector Number": 36,
+            "Success Rate": 40,
+            "Minimum Success Rate": 3,
+            "Hp Time": 0.6,
+            "Population": 10000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 37,
+            "Last Sector Number": 45,
+            "Success Rate": 40,
+            "Minimum Success Rate": 3,
+            "Hp Time": 0.4,
+            "Population": 12000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 46,
+            "Last Sector Number": 54,
+            "Success Rate": 40,
+            "Minimum Success Rate": 3,
+            "Hp Time": 0.3,
+            "Population": 14000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 55,
+            "Last Sector Number": 63,
+            "Success Rate": 35,
+            "Minimum Success Rate": 3,
+            "Hp Time": 0.25,
+            "Population": 17000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 64,
+            "Last Sector Number": 72,
+            "Success Rate": 35,
+            "Minimum Success Rate": 3,
+            "Hp Time": 0.25,
+            "Population": 20000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 73,
+            "Last Sector Number": 81,
+            "Success Rate": 30,
+            "Minimum Success Rate": 2,
+            "Hp Time": 0.2,
+            "Population": 23000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 82,
+            "Last Sector Number": 90,
+            "Success Rate": 30,
+            "Minimum Success Rate": 2,
+            "Hp Time": 0.2,
+            "Population": 25000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 91,
+            "Last Sector Number": 99,
+            "Success Rate": 30,
+            "Minimum Success Rate": 2,
+            "Hp Time": 0.1,
+            "Population": 28000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 100,
+            "Last Sector Number": 108,
+            "Success Rate": 30,
+            "Minimum Success Rate": 2,
+            "Hp Time": 0.1,
+            "Population": 31000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 109,
+            "Last Sector Number": 117,
+            "Success Rate": 25,
+            "Minimum Success Rate": 2,
+            "Hp Time": 0.1,
+            "Population": 34000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 118,
+            "Last Sector Number": 126,
+            "Success Rate": 25,
+            "Minimum Success Rate": 2,
+            "Hp Time": 0.1,
+            "Population": 37000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 127,
+            "Last Sector Number": 135,
+            "Success Rate": 25,
+            "Minimum Success Rate": 2,
+            "Hp Time": 0.1,
+            "Population": 40000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 136,
+            "Last Sector Number": 144,
+            "Success Rate": 25,
+            "Minimum Success Rate": 2,
+            "Hp Time": 0.1,
+            "Population": 43000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 145,
+            "Last Sector Number": 153,
+            "Success Rate": 25,
+            "Minimum Success Rate": 2,
+            "Hp Time": 0.1,
+            "Population": 46000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 154,
+            "Last Sector Number": 162,
+            "Success Rate": 25,
+            "Minimum Success Rate": 2,
+            "Hp Time": 0.1,
+            "Population": 49000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 163,
+            "Last Sector Number": 171,
+            "Success Rate": 25,
+            "Minimum Success Rate": 2,
+            "Hp Time": 0.1,
+            "Population": 52000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 172,
+            "Last Sector Number": 180,
+            "Success Rate": 25,
+            "Minimum Success Rate": 2,
+            "Hp Time": 0.1,
+            "Population": 55000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 181,
+            "Last Sector Number": 189,
+            "Success Rate": 20,
+            "Minimum Success Rate": 1,
+            "Hp Time": 0.1,
+            "Population": 58000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 190,
+            "Last Sector Number": 198,
+            "Success Rate": 20,
+            "Minimum Success Rate": 1,
+            "Hp Time": 0.1,
+            "Population": 61000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 199,
+            "Last Sector Number": 207,
+            "Success Rate": 20,
+            "Minimum Success Rate": 1,
+            "Hp Time": 0.1,
+            "Population": 63000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 208,
+            "Last Sector Number": 216,
+            "Success Rate": 15,
+            "Minimum Success Rate": 1,
+            "Hp Time": 0.1,
+            "Population": 66000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 217,
+            "Last Sector Number": 225,
+            "Success Rate": 15,
+            "Minimum Success Rate": 1,
+            "Hp Time": 0.1,
+            "Population": 69000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 226,
+            "Last Sector Number": 234,
+            "Success Rate": 15,
+            "Minimum Success Rate": 1,
+            "Hp Time": 0.1,
+            "Population": 72000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 235,
+            "Last Sector Number": 243,
+            "Success Rate": 15,
+            "Minimum Success Rate": 1,
+            "Hp Time": 0.1,
+            "Population": 75000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 244,
+            "Last Sector Number": 252,
+            "Success Rate": 15,
+            "Minimum Success Rate": 1,
+            "Hp Time": 0.1,
+            "Population": 78000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 253,
+            "Last Sector Number": 261,
+            "Success Rate": 15,
+            "Minimum Success Rate": 1,
+            "Hp Time": 0.1,
+            "Population": 81000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 262,
+            "Last Sector Number": 270,
+            "Success Rate": 15,
+            "Minimum Success Rate": 1,
+            "Hp Time": 0.1,
+            "Population": 84000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 271,
+            "Last Sector Number": 219,
+            "Success Rate": 15,
+            "Minimum Success Rate": 1,
+            "Hp Time": 0.1,
+            "Population": 87000,
+            "Sector Move Point": 1
+        },
+        {
+            "First Sector Number": 280,
+            "Last Sector Number": 1000,
+            "Success Rate": 15,
+            "Minimum Success Rate": 1,
+            "Hp Time": 0.1,
+            "Population": 90000,
+            "Sector Move Point": 1
+        }
+    ]
+}
