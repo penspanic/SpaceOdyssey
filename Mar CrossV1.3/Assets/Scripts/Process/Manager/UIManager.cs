@@ -192,7 +192,8 @@ public class UIManager : MonoBehaviour, IUseLanguage
         int distance = selectedPlanet.transform.parent.GetComponent<Sector>().nowSectorTile.index - 1;
         player.currentHp -= 5f * distance;
 
-        Image ring = Instantiate(exploringRing);
+        
+        Image ring = Instantiate(exploringRing); // Create red ring that shows exploring progress.
         ring.transform.SetParent(ringHome, false);
         ring.transform.position = selectedPlanet.transform.position;
         ring.transform.localScale = target.transform.localScale;
@@ -200,29 +201,30 @@ public class UIManager : MonoBehaviour, IUseLanguage
         ring.GetComponent<Ring>().isChasing = true;
         ring.fillAmount = 0;
 
-        Text ringText = ring.GetComponentInChildren<Text>();
-        float elapsedTIme = 0;
+
+        Text ringText = ring.GetComponentInChildren<Text>(); 
+        float elapsedTime = 0;
         bool isSoundEffected = false;
         while (true)
         {
             if (player.gameObject.activeSelf == false)
                 break;
-            if (elapsedTIme >= 2f)
+            if (elapsedTime >= 2f)
                 break;
-            if (elapsedTIme > 0.3f && !isSoundEffected)
+            if (elapsedTime > 0.3f && !isSoundEffected)
             {
                 isSoundEffected = true;
                 audioSource.clip = exploringSound;
                 audioSource.Play();
             }
-            if (ring.transform.position.x <= -6.4f)
+            if (ring.transform.position.x <= -6.4f) // If ring become out of screen,
             {
                 Destroy(ring);
                 break;
             }
             ring.fillAmount += Time.deltaTime / 2;
-            ringText.text = ((int)(ring.fillAmount * 100)).ToString() + "%";
-            elapsedTIme += Time.deltaTime;
+            ringText.text = ((int)(ring.fillAmount * 100)).ToString() + "%"; // Show percent of exploring progress.
+            elapsedTime += Time.deltaTime;
             exploringRing.transform.localScale = target.transform.localScale;
             yield return null;
         }
@@ -230,7 +232,7 @@ public class UIManager : MonoBehaviour, IUseLanguage
         audioSource.Stop();
         audioSource.clip = exploreSuccessSound;
         audioSource.Play();
-        PlanetBase destroyingObj = exploringPlanets.Dequeue();
+        PlanetBase destroyingObj = exploringPlanets.Dequeue(); // Destroy first added planet among exploring planets.
         destroyingObj.Explore();
     }
 
