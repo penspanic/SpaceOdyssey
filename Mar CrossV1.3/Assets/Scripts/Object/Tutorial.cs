@@ -108,7 +108,7 @@ public class Tutorial : MonoBehaviour, ITouchable
         if (gameMgr.isStart)
         {
             this.GetComponent<SpriteRenderer>().enabled = false;
-            this.transform.FindChild("tutorial_t").GetComponent<SpriteRenderer>().enabled = false;
+            this.transform.Find("tutorial_t").GetComponent<SpriteRenderer>().enabled = false;
         }
 
         yield return new WaitForSeconds(0.25f);

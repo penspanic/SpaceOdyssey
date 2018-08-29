@@ -20,6 +20,6 @@ public class SpecialPlanet : PlanetBase
     {
         isExplored = true;
         spRenderer.enabled = true;
-        transform.FindChild("Hide Planet").GetComponent<SpriteRenderer>().enabled = false;
+        transform.Find("Hide Planet").GetComponent<SpriteRenderer>().enabled = false;
     }
 }
