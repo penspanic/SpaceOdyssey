@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class LanguageSatellite : MonoBehaviour, ITouchable
 {
     public Sprite korSprite;
     public Sprite engSprite;
 
-    public SpriteRenderer languageShow;
+    public Image languageShow;
 
     LanguageManager languageMgr;
     Tutorial tutorial;

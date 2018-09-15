@@ -107,8 +107,8 @@ public class Tutorial : MonoBehaviour, ITouchable
         tutorialImage.gameObject.SetActive(false);
         if (gameMgr.isStart)
         {
-            this.GetComponent<SpriteRenderer>().enabled = false;
-            this.transform.Find("tutorial_t").GetComponent<SpriteRenderer>().enabled = false;
+            this.GetComponent<Image>().enabled = false;
+            this.transform.Find("tutorial_t").GetComponent<Image>().enabled = false;
         }
 
         yield return new WaitForSeconds(0.25f);

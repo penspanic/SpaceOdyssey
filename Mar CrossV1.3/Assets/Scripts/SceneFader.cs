@@ -26,6 +26,7 @@ public class SceneFader: MonoBehaviour {
 		fadeObject.SetParent (uiCanvas);
 		fadeObject.localPosition = new Vector3 (0, 0, 0);
 		fadeObject.localScale = new Vector3 (1, 1, 1);
+		fadeObject.GetComponent<RectTransform>().sizeDelta = Vector2.zero;
         fadeObjectImage = fadeObject.GetComponent<Image>();
 		FadeIn ();
 
@@ -52,8 +53,8 @@ public class SceneFader: MonoBehaviour {
         fadeObject.gameObject.SetActive(true);
         while (Mathf.Abs(fadeObjectImage.color.a - targetColor.a) >= 0.05f)
         {
-			yield return null;
             fadeObjectImage.color = Color.Lerp(fadeObjectImage.color, targetColor, fadeSpeed * 0.016f);
+			yield return null;
 		}
         fadeObjectImage.color = targetColor;
 		Time.timeScale = 1;

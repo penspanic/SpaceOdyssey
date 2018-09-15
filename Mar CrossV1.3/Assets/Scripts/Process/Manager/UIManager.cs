@@ -138,8 +138,30 @@ public class UIManager : MonoBehaviour, IUseLanguage
 
     public void MoveBotomUI()
     {
-        StartCoroutine(CoroutineUtil.LerpMove(bottomUI, bottomUI.transform.position, new Vector2(bottomUI.transform.position.x, bottomUI.transform.position.y + 1.91f), 3, false, false, this.gameObject, "OnMoveEnd"));
-        StartCoroutine(CoroutineUtil.LerpMove(topUI, topUI.transform.position, new Vector2(topUI.transform.position.x, topUI.transform.position.y - 1.2f), 3, false, false, this.gameObject, "OnMoveEnd"));
+//        StartCoroutine(CoroutineUtil.LerpMove(
+//            bottomUI, bottomUI.transform.position, new Vector2(bottomUI.transform.position.x, bottomUI.transform.position.y + 1.91f),
+//            3, false, false, this.gameObject, "OnMoveEnd"));
+//        StartCoroutine(CoroutineUtil.LerpMove(
+//            topUI, topUI.transform.position, new Vector2(topUI.transform.position.x, topUI.transform.position.y - 1.2f),
+//            3, false, false, this.gameObject, "OnMoveEnd"));
+        StartCoroutine(AnchorMove(bottomUI.GetComponent<RectTransform>(), new Vector2(-549f / 2f, 191f / 2f), 0.33f));
+        StartCoroutine(AnchorMove(topUI.GetComponent<RectTransform>(), new Vector2(0f, -60f), 0.33f));
+    }
+
+    private IEnumerator AnchorMove(RectTransform target, Vector2 endPosition, float time)
+    {
+        Debug.Log("Start anchored position : " + target.anchoredPosition);
+        float elapsedTime = 0f;
+        Vector2 startPosition = target.anchoredPosition;
+        while (elapsedTime < time)
+        {
+            elapsedTime += Time.deltaTime;
+            target.anchoredPosition = Vector2.Lerp(startPosition, endPosition, elapsedTime / time);
+            yield return null;
+        }
+
+        target.anchoredPosition = endPosition;
+        OnMoveEnd();
     }
 
     bool bottomUIMoveEnd = false;
